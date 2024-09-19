@@ -15,7 +15,7 @@ let age = 34
 let isLoggedIn = false
 
 //primitive datatype
-// number : 2^53
+// Number : 2^53
 // BigInt
 // String : "" or ''
 // Boolean : true/false
