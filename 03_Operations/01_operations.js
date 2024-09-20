@@ -31,3 +31,15 @@ let n9 = "9"
 let n10 = 3
 console.log(n7+n8+n9+n10)
 
+//not preferred, consider as a messy codes, reduces readability
+console.log(3+4*5%2)
+console.log(+true)     //o/p : 1
+// console.log(true+)  //o/p : error
+console.log(+"")       //o/p : 0
+let num1, num2, num3
+num1 = num2 = num3 = 2+2
+
+//refer mdn for prefix and postfix & ecma for conversion
+let gamecounter = 100
+gamecounter++
+console.log(gamecounter)
