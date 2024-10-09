@@ -22,9 +22,7 @@ let isLoggedIn = false;
 // null : standalone value : empty
 // undefined : value not assigned
 // Symbol : to find uniqueness, mostly used in figma,etc
-//object 
 
-// ex. for object
 console.log(typeof age)       //o/p : number 
 console.log(typeof undefined) //o/p : undefined 
 console.log(typeof null)      //o/p : object 

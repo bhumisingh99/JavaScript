@@ -41,9 +41,9 @@ console.log(valueInNumber5)          //NaN
 console.log(typeof valueInNumber5)   //number
 
 //In Short
-// 33 -> 33 : Number
-// "33ab" -> NaN : Number
-// null -> 0 : Number
-// undefined -> NaN : Number
-// "Bhumi" -> NaN : Number
-// true -> 1 : Number
+// 33 :number            -> 33 : Number
+// "33ab" : string       -> NaN : Number
+// null : object         -> 0 : Number
+// undefined : undefined -> NaN : Number
+// "Bhumi" : string      -> NaN : Number
+// true : boolean        -> 1 : Number
