@@ -1,18 +1,18 @@
 "use Strict" //treat all js code as newer version in this file
 
 // using nodejs, not browser
-// alert("hello")
+// alert("hello")  //o/p : error(here in node)  //hello(in browser)
 // or 
-// alert(3+3)
+// alert(3+3)      //o/p : error(here in node)  //6(in browser)
 
 //code readability must be high
 console.log(3+
     3)
 console.log("hello")
 
-let name = "Bhumi"
-let age = 34
-let isLoggedIn = false
+let name = "Bhumi";
+let age = 34;
+let isLoggedIn = false;
 
 //primitive datatype
 // Number : 2^53
@@ -24,6 +24,6 @@ let isLoggedIn = false
 // Symbol : to find uniqueness, mostly used in figma,etc
 
 //object
-console.log(typeof age)       //number : o/p
-console.log(typeof undefined) //undefined :o/p
-console.log(typeof null)      //object : o/p
+console.log(typeof age)       //o/p : number 
+console.log(typeof undefined) //o/p : undefined 
+console.log(typeof null)      //o/p : object 
