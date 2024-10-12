@@ -37,4 +37,4 @@ console.log(url.includes('sundar'))     //false : includes check if it exist or 
 const gameName1 = new String("Kunal-Singh-com")
 console.log(gameName1.split("-")); //["Kunal", "Singh", "com"] : to convert it in array
 
-//similarly many more are there
+//similarly many more are there : refer notes in nb
