@@ -67,3 +67,5 @@ console.log(Math.floor(Math.random()*(max-min+1)) + min);   // 16
  
 console.log(Math.sqrt(16));     // 4
 console.log(Math.pow(2,3));     // 2^3 = 8
+console.log(Math.cbrt(27));     // 3
+console.log(Math.log(8));       // 2.07944151
