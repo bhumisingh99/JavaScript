@@ -35,5 +35,3 @@ console.log(typeof myFunction);   //function, but actually it is object function
 // typeof : in notes
 
 // Dynamically Typed Lang.
-
-
