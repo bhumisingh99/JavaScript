@@ -66,7 +66,7 @@ console.log(users[1].email);     // h@gmail.com
 // navbar(company = "hitesh")
 
 
-// random api generator : to understand use JSON formatter
+// random api generator : to understand this api use JSON formatter
 // {
 //     "results": [
 //       {
