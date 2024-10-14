@@ -58,8 +58,8 @@ console.log(myn2);
 
 console.log("C ",myArr);   // C [ 2, 5, 6 ]
 
-const newArr = myArr.join()
-console.log(newArr);            // 2,9,1,3,5,6
+const newArr = myArr.join(" | ")
+console.log(newArr);            // 2|5|6
 console.log(typeof newArr);     // string
 
 const marvel_heros = ["Thor", "IronMan", "SpiderMan"]
