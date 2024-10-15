@@ -20,6 +20,7 @@ console.log(a);       // 300 : not defined
 
 // global scope when run inside inspect and node works differently
 
+// function inside function
 function one() {
     const username = "anshika"
 
@@ -55,6 +56,6 @@ function addOne(num) {
 // its a function as well but known as expression
 // mini hoisting, not only function is declared, but also stored in a variable
 console.log(addTwo(3));  // error: execution context 
-const addTwo = function(num){
+const addTwo = function(num) {
     return num+2
 }
