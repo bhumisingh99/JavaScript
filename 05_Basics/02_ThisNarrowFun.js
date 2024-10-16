@@ -1,18 +1,14 @@
-// Arrow function
-
-// we want, only the user entering this function being able to access this msg.
-// current context : the scope currently we are working in
-// this refers to the current context
 const User = {
     username: "anshika",
     price: "Rs. 999",
-
+    // we want, only the user entering this function being able to access this msg.
     welcomeMessage : function () {
         // for different user we want different msg to be printed
         console.log( `${this.username}, welcome to website` );   
         console.log(this)      
     }
 }
+// this refers to the current context, current context : the scope currently we are working in is current, and the data in it is context
 User.welcomeMessage()   // anshika, welcome to website
                         //  {
                                 // username: 'anshika',
@@ -30,12 +26,13 @@ User.welcomeMessage()   // Sam, welcome to website
                         //  }
 
 console.log(this)       // {}
-// engine in browser,now- node, deno, bun: 'stand-alone' engine
-// when engine runs the inside brower, the most global obj is window{} obj
-// in inspect - Window{}
-
 // outside the scope, what is the current context, gives {}
 
+// engine in browser,now- node, deno, bun: 'stand-alone' engine
+// when engine runs inside the brower, the most global obj is window{} obj
+// in inspect - Window{}
+
+// for functions this gives undefined, so this doesn't work for function as well.e
 function chai() {
     let username = "anshika"
     console.log(this.username); 
@@ -49,7 +46,7 @@ const chaii = function() {
 } 
 chaii()   // undefined
 
-// declare arrow functio{
+// Arrow function
 const chaiii = () => {
     let userName = "anshika"
     console.log(this.userName);

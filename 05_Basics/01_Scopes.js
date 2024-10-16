@@ -3,7 +3,7 @@
 
 // global scope
 // var c = 300
-let a = 300
+let a = 300 
 
 // block scope
 if(true) {
@@ -13,7 +13,7 @@ if(true) {
     console.log(a);  // 10
 }
 
-console.log(a);       // 300 : not defined 
+// console.log(a);       // 300 : not defined 
 // console.log(b);    //  : not defined
 // console.log(c);       // 30
 
@@ -48,14 +48,14 @@ if(true) {
 
 // ++++++   interesting   ++++++++++++
 
-console.log(addOne(6));    // 7
+console.log(addOne(6) );    // 7
 function addOne(num) {
     return num+1
 }
 
 // its a function as well but known as expression
 // mini hoisting, not only function is declared, but also stored in a variable
-console.log(addTwo(3));  // error: execution context 
+// console.log(addTwo(3));  // error: execution context 
 const addTwo = function(num) {
     return num+2
 }
