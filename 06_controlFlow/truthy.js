@@ -8,9 +8,6 @@ if(userEmail) {
 else {
     console.log("Don't have user email");
 }
-// for empty string, it gives false value
-// for empty array, it gives true value
-
 // falsy values : false, 0, -0, BigInt 0n, "", null, undefined, NaN
 // truthy values : [], "0", "false", " ", {}, function(){}, 
 
@@ -35,8 +32,12 @@ val1 = undefined ?? 15
 console.log(val1);    // 15
 val1 = null ?? 10 ?? 20
 console.log(val1);    // 10
+val1 = null ?? undefined 
+console.log(val1);    // undefined
+val1 = undefined ?? null 
+console.log(val1);    // null
 
 // Ternary Operator
-console.log(4>5?"hello":"hii");    // hii
+console.log(4>5?"hello":"hii")    // hii
 const iceTeaPrice = 100
-iceTeaPrice<=80 ? console.log("less than or equal to 80") : console.log("more than 80");  // more than 80
+iceTeaPrice<=80 ? console.log("less than or equal to 80") : console.log("more than 80")  // more than 80

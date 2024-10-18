@@ -1,46 +1,46 @@
 // switch
-// behaviour is called "fall-through"
+// behaviour is called "fall-through" : when break is not used.
 const month  = 7
 switch(month) {
     case 1 : 
         console.log("Jan")
-        break;
+        break
     case 2 : 
         console.log("feb")
-        break;
+        break
     case 3 : 
         console.log("mar")
-        break;
+        break
     case 4 : 
         console.log("apr")
-        break;
+        break
     case 5 : 
         console.log("may")
-        break;
+        break
     case 6 : 
         console.log("june")
-        break;
+        break
     case 7 : 
         console.log("july")
-        break;
+        break
     case 8 : 
         console.log("aug")
-        break;
+        break
     case 9 : 
         console.log("sep")
-        break;
+        break
     case 10 : 
         console.log("oct")
-        break;
+        break
     case 11 : 
         console.log("nov")
-        break;
+        break
     case 12 : 
         console.log("dec")
-        break;
+        break
     default :
         console.log("invalid input");
-        break;
+        break
 }
 // o/p - july
 // if breaks not used, ex: month = 10, then 

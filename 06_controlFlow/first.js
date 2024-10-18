@@ -22,7 +22,7 @@ if( score>100 ) {
 // shorthand notation
 const balance = 1000
 // implicit scope
-if( balance>500 ) console.log("test");
+if( balance>500 ) console.log("test")
 // or
 if( balance>500 ) console.log("test"), console.log("test2") // this is not preferred to be done
 
