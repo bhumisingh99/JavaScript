@@ -1,6 +1,6 @@
 // while loop
 let n = 0
-while( n<=6) {
+while(n<=6) {
     console.log(`value of n is ${n}`)
     n++
 }
@@ -30,6 +30,6 @@ do {
     console.log(`Score is ${score}`)
     score++
 }
-while(score>=5);
+while(score>=5)
 // o/p-
 // Score is 1 : exception

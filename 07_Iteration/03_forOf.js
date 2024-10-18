@@ -1,10 +1,10 @@
-// high order array loops
-
 // for of loop
 // [ "", "", "" ]
 // [ {}, {}, {} ]
 
 const arr = [ 3, 4, 6, 2, 1 ]
+console.log(arr);
+
 for (const i of arr) {
     console.log(`${i}`);
 }
@@ -38,34 +38,35 @@ for (const greet of greeting) {
 // Each char is m
 
 // Maps: contains only unique values and remains in order
-const map = new Map()
-map.set('IN', "India")
-map.set('USA', "United States of America")
-map.set('Fr', "France")
-console.log(map);
+const mapName = new Map()
+mapName.set('IN', "India")
+mapName.set('USA', "United States of America")
+mapName.set('Fr', "France")
+console.log(mapName);
 // o/p-
 // Map(3) {
 //     'IN' => 'India',
 //     'USA' => 'United States of America',
 //     'Fr' => 'France'
 //   }
-map.set('IN', "INDIA")
-console.log(map);
+mapName.set('IN', "INDIA")
+console.log(`${mapName}`);    // [object Map]
 // o/p-
 // Map(3) {
 //     'IN' => 'India',
 //     'USA' => 'United States of America',
 //     'Fr' => 'France'
 //   } : shows contain only unique values 
-for (const key of map) {
+for (const key of mapName) {
     console.log(key);
 }
 // [ 'IN', 'INDIA' ]
 // [ 'USA', 'United States of America' ]
 // [ 'Fr', 'France' ]
 
+
 // destructuring of map
-for (const [key] of map) {
+for (const [key] of mapName) {
     console.log(key);
 }
 // o/p-
@@ -73,13 +74,13 @@ for (const [key] of map) {
 // USA
 // Fr
 
-// destructuring of map
-for (const [key, value] of map) {
-    console.log(key, ':-', value)
+// destructuring of map to hold keys and value seperately
+for (const [key, value] of mapName) {
+    console.log(key +':- ' +value)
 }
-// IN :- INDIA
-// USA :- United States of America
-// Fr :- France
+// IN:- INDIA
+// USA:- United States of America
+// Fr:- France
 
 // for object
 const myObj = {

@@ -2,6 +2,7 @@
 
 // for loop : it jumps alot here and there
 const arr = [ 5, 6, 7, 3, 2, 8 ]
+console.log(arr);
 for(let i=0; i<arr.length; i++) {
     const element = arr[i];
     console.log(element);
