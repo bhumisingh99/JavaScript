@@ -57,12 +57,19 @@ console.log(`${mapName}`);    // [object Map]
 //     'USA' => 'United States of America',
 //     'Fr' => 'France'
 //   } : shows contain only unique values 
+
 for (const key of mapName) {
     console.log(key);
 }
 // [ 'IN', 'INDIA' ]
 // [ 'USA', 'United States of America' ]
 // [ 'Fr', 'France' ]
+for (const key of mapName) {
+    console.log(`${key}`);
+}
+// IN, INDIA
+// USA, United States of America 
+// Fr, France
 
 
 // destructuring of map
@@ -91,4 +98,4 @@ const myObj = {
 //     console.log(key, value);
 // }     // error, myObj is not iterable
 
-// for of does not woeks for object
+// for-of does not work for object.
