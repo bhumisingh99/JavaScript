@@ -57,6 +57,16 @@ coding.forEach( (item, index, arrlist) => {
 // java 2 [ 'js', 'cpp', 'java', 'py' ]
 // py 3 [ 'js', 'cpp', 'java', 'py' ]
 
+[ 4, 5, 7 ].forEach( (value, key, arr) => console.log(arr))
+// when " " or `` used
+// a[0] = 4, arr = 4,5,7
+// a[1] = 5, arr = 4,5,7
+// a[2] = 7, arr = 4,5,7
+
+// when simply printed
+// 4 0 [ 4, 5, 7 ]
+// 5 1 [ 4, 5, 7 ]
+// 7 2 [ 4, 5, 7 ]
 
 // [ {}, {}, {} ]
 const myCoding = [

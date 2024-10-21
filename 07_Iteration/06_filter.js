@@ -1,16 +1,8 @@
 const coding = [ "js", "java", "python", "cpp" ]
-coding.filter( (item) => console.log(item) )
-// js
-// java
-// python
-// cpp
+
 //forEach does not return any value, as on printing values after using return statement, it gives 'undefined' as an o/p 
 const values = coding.forEach( (item) => {
-    console.log(item)  
-    // js
-    // java
-    // python
-    // cpp
+    console.log(item)
     // return item
 })
 // console.log(values);  // undefined
@@ -56,30 +48,107 @@ const books = [
     { title: 'Book Six', genre: 'History', publish: 1981, edition: 2004 },
     { title: 'Book Seven', genre: 'Fiction', publish: 1981, edition: 2004 }
 ]
+
 //forOf
 for (const element of books) {
     console.log(element);
     console.log(element.title);
 }
+// { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 }       
+// Book One
+// { title: 'Book Two', genre: 'History', publish: 2004, edition: 2004 }       
+// Book Two
+// { title: 'Book Three', genre: 'Fiction', publish: 1981, edition: 2004 }     
+// Book Three
+// { title: 'Book Four', genre: 'History', publish: 1981, edition: 2004 }      
+// Book Four
+// { title: 'Book Five', genre: 'Fiction', publish: 1981, edition: 2004 }
+// Book Five
+// { title: 'Book Six', genre: 'History', publish: 1981, edition: 2004 }       
+// Book Six
+// { title: 'Book Seven', genre: 'Fiction', publish: 1981, edition: 2004 }     
+// Book Seven
+
 //forIn
 for (const key in books) {
     console.log(books[key]);
     console.log(books[key].edition);
 }
+// { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 }       
+// 2004
+// { title: 'Book Two', genre: 'History', publish: 2004, edition: 2004 }       
+// 2004
+// { title: 'Book Three', genre: 'Fiction', publish: 1981, edition: 2004 }     
+// 2004
+// { title: 'Book Four', genre: 'History', publish: 1981, edition: 2004 }      
+// 2004
+// { title: 'Book Five', genre: 'Fiction', publish: 1981, edition: 2004 }      
+// 2004
+// { title: 'Book Six', genre: 'History', publish: 1981, edition: 2004 }       
+// 2004
+// { title: 'Book Seven', genre: 'Fiction', publish: 1981, edition: 2004 }     
+// 2004
+
 //forEach
 books.forEach( (item) => {
     console.log(item);
     console.log(item.genre);
 })
+// { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 }       
+// Fiction
+// { title: 'Book Two', genre: 'History', publish: 2004, edition: 2004 }       
+// History
+// { title: 'Book Three', genre: 'Fiction', publish: 1981, edition: 2004 }     
+// Fiction
+// { title: 'Book Four', genre: 'History', publish: 1981, edition: 2004 }      
+// History
+// { title: 'Book Five', genre: 'Fiction', publish: 1981, edition: 2004 }      
+// Fiction
+// { title: 'Book Six', genre: 'History', publish: 1981, edition: 2004 }       
+// History
+// { title: 'Book Seven', genre: 'Fiction', publish: 1981, edition: 2004 }     
+// Fiction
+
 //forEach with condition
+const newBook = []
+books.forEach( (item) => {
+    if( item.genre==="History"){
+        newBook.push(item)
+    }
+})
+console.log(newBook);
+// [
+//     { title: 'Book Two', genre: 'History', publish: 2004, edition: 2004 },    
+//     { title: 'Book Four', genre: 'History', publish: 1981, edition: 2004 },
+//     { title: 'Book Six', genre: 'History', publish: 1981, edition: 2004 }     
+// ]
 
 //filter
-books.filter( (bk) => console.log(bk) )
+const ans = books.filter( function(bk) { return bk})
+console.log(ans);
+// [
+//     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 }       
+//     { title: 'Book Two', genre: 'History', publish: 2004, edition: 2004 }       
+//     { title: 'Book Three', genre: 'Fiction', publish: 1981, edition: 2004 }     
+//     { title: 'Book Four', genre: 'History', publish: 1981, edition: 2004 }      
+//     { title: 'Book Five', genre: 'Fiction', publish: 1981, edition: 2004 }      
+//     { title: 'Book Six', genre: 'History', publish: 1981, edition: 2004 }       
+//     { title: 'Book Seven', genre: 'Fiction', publish: 1981, edition: 2004 } 
+// ]
 
 //filter with condition
 let userBooks = books.filter( (bk) => bk.genre === 'History' )
 console.log(userBooks);
+// [
+//     { title: 'Book Two', genre: 'History', publish: 2004, edition: 2004 },    
+//     { title: 'Book Four', genre: 'History', publish: 1981, edition: 2004 },
+//     { title: 'Book Six', genre: 'History', publish: 1981, edition: 2004 }     
+// ]
+
 userBooks = books.filter( (bk) => {
     return bk.publish >= 2000 && bk.genre === "History"
 } )
 console.log(userBooks);
+// [
+//     { title: 'Book Two', genre: 'History', publish: 2004, edition: 2004 }     
+// ]
