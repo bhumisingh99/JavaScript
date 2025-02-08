@@ -40,6 +40,14 @@ let valueInNumber5 = Number(score5)
 console.log(valueInNumber5)          //NaN
 console.log(typeof valueInNumber5)   //number
 
+let score6 = ""
+console.log(score6)
+console.log(typeof score6)
+//converting to number
+let valueInNumber6 = Number(score6)
+console.log(valueInNumber6)          //NaN
+console.log(typeof valueInNumber6)   //number
+
 //In Short
 // 33 :number            -> 33 : Number
 // "33ab" : string       -> NaN : Number
@@ -47,3 +55,4 @@ console.log(typeof valueInNumber5)   //number
 // undefined : undefined -> NaN : Number
 // "Bhumi" : string      -> NaN : Number
 // true : boolean        -> 1 : Number
+// "" : string           -> 0 : Number

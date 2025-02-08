@@ -25,3 +25,11 @@ console.log(naam3)
 let valueInString3 = String(naam3)
 console.log(valueInString3)           //true
 console.log(typeof valueInString3)    //string
+
+let naam4 = ""
+console.log(naam4)
+console.log(typeof naam4)
+//converting to string
+let valueInString4 = String(naam4)
+console.log(valueInString4)           //true
+console.log(typeof valueInString4)    //string
